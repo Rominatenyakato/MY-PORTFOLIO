@@ -2,36 +2,254 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 196, 235);
 }
 
-
-.nav{
+/*THIS IS NAV BAR*/
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 5px 20px;
+    background-color: rgb(99, 22, 82)
     
 }
-
-.navelements ul{
-    list-style:none ;
+.navelements ul {
+    list-style: none;
     display: flex;
     gap: 30px;
+    
 }
+.navelements ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 
+}
 .navbutton{
-    background-color: black;
+    background-color: rgba(48, 103, 129, 0.055);
     color: white;
     padding: 10px 20px;
     cursor: pointer;
 }
 .navbutton{
-    background-color: none;
+    background-color: black;
     outline: none;
     border: none;
     color: white;
+}
+/* THIS IS HERO SECTION */
+.herosection {
+   background-color: rgb(92, 82, 25); 
+   padding:20px ;
+   display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+
+}
+.herosection .hero discription{
+    width: 450px;
+}
+
+  .hero discription h1 {
+    padding: 20px;
+    font-size: 36px;
+  } 
+    .hero description button {
+        background: none;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        
+
+    }
+
+.herosection .hero image {
+    border-radius: 20px;
+}
+/* MY WORK SECTION */
+.work metrics {
+    display: flex;
+    justify-content: space-between;
+    margin: 50PX 3work metrics0PX;
+}
+.work metrics h4 {
+    font-size: 20px;
+}
+
+ .work metrics.work-metrics {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 
 }
 
+ .work metrics .work metrics h6{
+display: flex;
+align-items:center ;
+gap: 30px;
+justify-content:center ;
+margin-bottom:30px ;
+ }
+    
+
+.work projects img {
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+
 }
+
+.work -cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.work -cards img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.work -cards button {
+    background-color: black;
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+/* THIS IS LOGO SECTION */
+
+.work logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+
+.work logo .work logo {
+
+ width: 300px;
+    height: 200px;
+    border-radius: 16px;
+
+}
+
+/* CLIENTS REVIEW */
+
+.clients review {
+    background-color: yellowgreen;
+    padding: 50px 80px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.clients review div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+
+}
+
+.clients review div h5 {
+    font-size: 25px;
+    margin-top: 15px;
+
+}
+    
+.work metrics.work-metrics h6 {
+    font-size: 12px;
+}
+
+
+
+ .work metrics .work metrics p {
+    font-size: 10px;
+ }
+
+.work projects {
+    flex-direction: column;
+}
+
+
+.work projects img {
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERRY */
+@media (max-width:768) {
+       
+.clients review{
+padding: 15px 25px;
+}
+} 
+
+.clients review {
+flex-direction: column;
+}
+
+    .navelements {
+        display: none;
+    }
+
+    
+.herosection {
+    flex-direction: column-reverse;
+}
+.hero image {
+    width: 100%;
+}
+    
+    
+.work metrics h4  {
+    font-size: 14px;
+}
+ 
+    .work logo {
+        flex-direction: column;
+    }
+
+
+ 
+    .work logo .work log {
+        width: 100%;
+    }
+    
+    
+
+
